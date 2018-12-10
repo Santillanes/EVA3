@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Luis Santillanes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-12-08 03:47:26 p. m."/>
+        <attribute name="created" value="THVpcyBTYW50aWxsYW5lcztMQVBUT1AtSktORzlNUkw7MjAxOC0xMi0wODswMzozNDoxMyBwLiBtLjs0MTYy"/>
+        <attribute name="edited" value="THVpcyBTYW50aWxsYW5lcztMQVBUT1AtSktORzlNUkw7MjAxOC0xMi0wODswMzo0NzoyNiBwLiBtLjsyOzQyNzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="usu" type="String" array="False" size=""/>
+            <assign variable="usu" expression="&quot;&quot;"/>
+            <declare name="contra" type="String" array="False" size=""/>
+            <assign variable="contra" expression="&quot;&quot;"/>
+            <declare name="cont" type="Integer" array="False" size=""/>
+            <assign variable="cont" expression="1"/>
+            <while expression="((!(usu==&quot;abc&quot;) || !(contra==&quot;cba&quot;)) &amp;&amp; (cont&lt;=3))">
+                <output expression="&quot;Ingrese usuario:&quot;" newline="True"/>
+                <input variable="usu"/>
+                <output expression="&quot;Ingrese contrase&#241;a:&quot;" newline="True"/>
+                <input variable="contra"/>
+                <assign variable="cont" expression="cont+1"/>
+            </while>
+            <if expression="cont == 4">
+                <then>
+                    <output expression="&quot;*** ACCESO DENEGADO ***&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;*** BIENVENIDO ***&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

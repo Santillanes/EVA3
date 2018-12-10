@@ -1,0 +1,29 @@
+#include <iostream>
+
+
+
+using namespace std;
+
+
+
+int calculaFactorial(int iVal){
+
+    int iResu = 1;
+
+    for(int i = iVal; i >=1; i--){
+
+        iResu*=i;
+
+    }
+
+    return iResu;
+
+}
+
+
+
+int main() {
+
+	cout << "Resultado = " << calculaFactorial(5) << endl;
+
+}

@@ -1,0 +1,29 @@
+#include <iostream>
+
+
+
+using namespace std;
+
+
+
+void incrementa(int &iVal){     //El "&" sirve para utilizar lo que esta almacenado en la dirección, no la dirección. PASO POR REFERENCIA --> SE RECIBE DIRECCIÓN EN MEMNORIA
+
+
+    iVal++;
+
+}
+
+
+
+int main() {
+
+	
+
+	int iValor = 5;
+	incrementa(iValor);
+
+	cout << "El valor es: " << iValor << endl;
+
+	
+
+}

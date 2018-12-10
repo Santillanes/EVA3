@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Luis Santillanes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-12-08 04:24:56 p. m."/>
+        <attribute name="created" value="THVpcyBTYW50aWxsYW5lcztMQVBUT1AtSktORzlNUkw7MjAxOC0xMi0wODswNDoyMDoxNSBwLiBtLjs0MTYw"/>
+        <attribute name="edited" value="THVpcyBTYW50aWxsYW5lcztMQVBUT1AtSktORzlNUkw7MjAxOC0xMi0wODswNDoyNDo1NiBwLiBtLjsxOzQyNzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Inicia Main&quot;" newline="True"/>
+            <call expression="A"/>
+            <output expression="&quot;Termina Main&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="A" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Inicia A&quot;" newline="True"/>
+            <call expression="B"/>
+            <output expression="&quot;Termina A&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="B" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Inicia B&quot;" newline="True"/>
+            <call expression="C"/>
+            <output expression="&quot;Termina B&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="C" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Inicia C&quot;" newline="True"/>
+            <output expression="&quot;Termina C&quot;" newline="True"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1/0"/>
+        </body>
+    </function>
+</flowgorithm>
